@@ -1,0 +1,31 @@
+{% extends "pizzas/base.html" %} 
+{% load static %}
+{% block content %}
+<style>
+    .center {
+      margin: auto;
+      width: 810%;
+      border: 15px solid black;
+      padding: 25px;
+      background-color: whitesmoke;
+    }
+    body{
+        background-image: url("https://cdn.vox-cdn.com/thumbor/oh20vhWtIQejr-mqXnW1OHvJz8A=/0x0:1906x866/1200x800/filters:focal(148x296:452x600)/cdn.vox-cdn.com/uploads/chorus_image/image/71068532/image_2022_07_08_100725690.0.png");
+        background-repeat: no-repeat
+    }
+    .textarea {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<div class='center'>
+    <form action='.' method='POST'> 
+        {% csrf_token %}
+        <div class="title">
+            <div>
+                <p>Surfer Boy Pizzeria</p>
+            </div>
+        </div>
+    
+{% endblock content %}
